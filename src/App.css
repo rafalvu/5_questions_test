@@ -1,38 +1,33 @@
-.App {
-  text-align: center;
+/* Define primary and secondary colors */
+:root {
+  --primary-color: #d1a866;
+  --secondary-color: #365380;
+}
+/* Apply primary color to the slider thumb */
+.MuiSlider-thumb {
+  color: var(--primary-color);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Apply secondary color to the slider rail */
+.MuiSlider-rail {
+  color: var(--secondary-color);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Apply secondary color to the slider track */
+.MuiSlider-track {
+  color: var(--secondary-color);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Apply primary color to the selected button */
+.selected-button {
+  color: var(--primary-color) !important;
+  color: #fff !important;
+}
+.two-column-form-group {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  gap: 10px;
+  flex: 1 1 calc(50% - 10px);
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.MuiBox-root {
 }
